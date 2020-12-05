@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cyberdustin Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" type="text/css" href="responsivestyle.css">
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+	<link rel="icon" href="img/icon_дфкпу.png">
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+	></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"/>
+	
+</head>
+<body>
+	<div class="scroll-up-btn">
+		<i class="fas fa-angle-up"></i>
+	</div>
+	<nav class="navbar">
+		<div class="max-width">
+			<!-- <div class="logo"><a href="#">Port<span>folio.</span></a></div> -->
+			<div class="logo">
+				<a href="#"><img src="img/mylogo.png"></a>
+			</div>
+			<ul class="menu">
+				<li><a href="#home" class="menu-btn">Home</a></li>
+				<li><a href="#about" class="menu-btn">About</a></li>
+				<li><a href="#services" class="menu-btn">Services</a></li>
+				<li><a href="#skills" class="menu-btn">Skills</a></li>
+				<li><a href="#graphdesignworks" class="menu-btn">GFX</a></li>
+				<li><a href="#contact" class="menu-btn">Contact</a></li>	
+			</ul>
+			<div class="menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</nav>
+
+	<!-- home section start -->
+	<section class="home" id="home">
+		<div class="max-width">
+			<div class="home-content ">
+				<div class="column left">
+					<div class="text-1">Hello, my name is</div>
+					<div class="text-2">Dastan Semeigazy</div>
+					<div class="text-3">And I'm a <span class="typing"></span></div>
+					<a href="#contact">Hire me</a>
+					<div class="social-media">
+						<i class="fab fa-instagram" onclick="instaLink()"></i>
+						<i class="fab fa-telegram-plane" onclick="telegramLink()"></i>
+						<i class="fab fa-vimeo-v" style="cursor: not-allowed;"></i>
+						<i class="fab fa-behance" style="cursor: not-allowed;"></i>
+						<i class="fab fa-whatsapp" style="cursor: not-allowed;"></i>
+						<i class="fab fa-vk" style="cursor: not-allowed;"></i>
+						<i class="fab fa-github" style="cursor: not-allowed;"></i>
+					</div>
+				</div>
+				<div class="column right">
+					<img src="img/profile-1.jpg" alt="" class="removeImg">
+				</div>
+			</div>
+			<!-- <img src="img/profile-1.jpg" alt=""> -->
+		</div>
+	</section>
+
+	<!-- about section start  -->
+	
+	<section class="about" id="about">
+		<div class="max-width">
+			<h2 class="title">About me</h2>
+			<div class="about-content">
+				<div class="column left">
+					<img src="img/profile-1.jpg" alt="#">
+				</div>
+				<div class="column right">	
+					<div class="text">I'm Dastan and I'm a <span class="typing-2"></span></div>
+					<p>Hello World! You can see a brief description of who I am in the animated text above. I am engaged in various types of activities, mainly they are related to the field of media production. Below there is a separate blog about the services I provide, you can read in more detail. Graphic / Motion Designer based in Almaty, Kazakhstan. I'll tell you a lil secret, the button "Download Resume" at the bottom does not work yet. In short, scroll further to view the portfolio and find out contact information. Yes, yes, I could not write anything serious here. Good luck.</p>
+					<a href="#">Download CV</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- services section start  -->
+	
+	<section class="services" id="services">
+		<div class="max-width">
+			<h2 class="title">My Services</h2>
+			<div class="serv-content">
+				<div class="card">
+					<div class="box">
+						<i class="fas fa-paint-brush"></i>
+						<div class="text">Graphic Design</div>
+						<p>I can design your community blog / channel in various styles. I design different types of covers, avatars, posters, banners, and so on. Mostly for social networks, but also on sites	.</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<i class="fas fa-desktop"></i>
+						<div class="text">Motion Design / 3D / VFX</div>
+						<p>I develop animation for your videos in various styles of performance, such as 2D animation or 3D. I can customize and integrate 3d assets. Also composing the visual part of your product.</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<i class="fas fa-code"></i>
+						<div class="text">Front-End Development</div>
+						<p>Developing fully responsive websites. At your discretion and also turnkey, using all modern technologies. Websites of any complexity. The entire service is provided as soon as possible.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- skills section start  -->
+	<section class="skills" id="skills">
+		<div class="max-width">
+			<h2 class="title">My Skills</h2>
+			<div class="skills-content">
+				<div class="column left">
+					<div class="text">My creative skills and experiences.</div>
+					<p>I am fluent in almost all Adobe product packages: Adobe After Effects, Premier Pro, Photoshop, Illustrator, Cinema 4D from 3d section. About programming: web languages are also fluent - html, css, javascript are a bit of jQuery and Java. Wanna learn Python, btw. On the right there is a graph in the form of a percentage of proficiency in various software / languages, respectively.</p>
+					<a href="#skills">Read more</a>
+				</div>
+				<div class="column right">
+					<div class="bars">
+						<div class="info">
+							<span>Adobe Photoshop</span>
+							<span>90%</span>
+						</div>
+						<div class="line html"></div>
+					</div>
+					<div class="bars">
+						<div class="info">
+							<span>Adobe After Effects</span>
+							<span>80%</span>
+						</div>
+						<div class="line css"></div>
+					</div>
+					<div class="bars">
+						<div class="info">
+							<span>Cinema4D</span>
+							<span>70%</span>
+						</div>
+						<div class="line js"></div>
+					</div>
+					<div class="bars">
+						<div class="info">
+							<span>HTML</span>
+							<span>70%</span>
+						</div>
+						<div class="line sql"></div>
+					</div>
+					<div class="bars">
+						<div class="info">
+							<span>CSS</span>
+							<span>60%</span>
+						</div>
+						<div class="line jq"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- graphdesignworks section start  -->
+	<section class="graphdesignworks" id="graphdesignworks">
+		<div class="max-width">
+			<h2 class="title">GraphDesign works</h2>
+			<div class="carousel owl-carousel">
+				<div class="card" id="firstImg">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/266/large/dastan-semeigazy-meyzfire.jpg?1581259766" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/266/large/dastan-semeigazy-meyzfire.jpg?1581259766"></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/302/large/dastan-semeigazy-chiwils.jpg?1581259859" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/302/large/dastan-semeigazy-chiwils.jpg?1581259859" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdnb.artstation.com/p/assets/images/images/024/077/517/large/dastan-semeigazy-kingsson.jpg?1581260498" data-lightbox="roadtrip"><img src="https://cdnb.artstation.com/p/assets/images/images/024/077/517/large/dastan-semeigazy-kingsson.jpg?1581260498" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/604/large/dastan-semeigazy-kirux-dg.jpg?1581260733" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/604/large/dastan-semeigazy-kirux-dg.jpg?1581260733" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdnb.artstation.com/p/assets/images/images/024/077/977/large/dastan-semeigazy-thoris.jpg?1581261785" data-lightbox="roadtrip"><img src="https://cdnb.artstation.com/p/assets/images/images/024/077/977/large/dastan-semeigazy-thoris.jpg?1581261785" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/192/large/dastan-semeigazy-flux-dg.jpg?1581262378" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/192/large/dastan-semeigazy-flux-dg.jpg?1581262378" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/288/large/dastan-semeigazy-anways-dg.jpg?1581259810" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/288/large/dastan-semeigazy-anways-dg.jpg?1581259810" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/352/large/dastan-semeigazy-crysto.jpg?1581260051" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/352/large/dastan-semeigazy-crysto.jpg?1581260051" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/508/large/dastan-semeigazy-druxa.jpg?1581260478" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/508/large/dastan-semeigazy-druxa.jpg?1581260478" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdnb.artstation.com/p/assets/images/images/024/077/601/large/dastan-semeigazy-kirill.jpg?1581260730" data-lightbox="roadtrip"><img src="https://cdnb.artstation.com/p/assets/images/images/024/077/601/large/dastan-semeigazy-kirill.jpg?1581260730" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/606/large/dastan-semeigazy-lego-dg.jpg?1581260735" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/606/large/dastan-semeigazy-lego-dg.jpg?1581260735" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdnb.artstation.com/p/assets/images/images/024/077/609/large/dastan-semeigazy-metalmeyz.jpg?1581260739" data-lightbox="roadtrip"><img src="https://cdnb.artstation.com/p/assets/images/images/024/077/609/large/dastan-semeigazy-metalmeyz.jpg?1581260739" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/610/large/dastan-semeigazy-meyz.jpg?1581260741" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/610/large/dastan-semeigazy-meyz.jpg?1581260741" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdnb.artstation.com/p/assets/images/images/024/077/677/large/dastan-semeigazy-meyzgraphicsgreen.jpg?1581260940" data-lightbox="roadtrip"><img src="https://cdnb.artstation.com/p/assets/images/images/024/077/677/large/dastan-semeigazy-meyzgraphicsgreen.jpg?1581260940" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/678/large/dastan-semeigazy-meyzminimalizm.jpg?1581260942" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/678/large/dastan-semeigazy-meyzminimalizm.jpg?1581260942" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdnb.artstation.com/p/assets/images/images/024/077/685/large/dastan-semeigazy-mirage.jpg?1581260945" data-lightbox="roadtrip"><img src="https://cdnb.artstation.com/p/assets/images/images/024/077/685/large/dastan-semeigazy-mirage.jpg?1581260945" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/886/large/dastan-semeigazy-rxsv.jpg?1581261547" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/886/large/dastan-semeigazy-rxsv.jpg?1581261547" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdnb.artstation.com/p/assets/images/images/024/077/893/large/dastan-semeigazy-skyy.jpg?1581261565" data-lightbox="roadtrip"><img src="https://cdnb.artstation.com/p/assets/images/images/024/077/893/large/dastan-semeigazy-skyy.jpg?1581261565" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/950/large/dastan-semeigazy-z-gen.jpg?1581261726" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/950/large/dastan-semeigazy-z-gen.jpg?1581261726" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/978/large/dastan-semeigazy-tiger.jpg?1581261788" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/978/large/dastan-semeigazy-tiger.jpg?1581261788" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdnb.artstation.com/p/assets/images/images/024/077/979/large/dastan-semeigazy-vas.jpg?1581261791" data-lightbox="roadtrip"><img src="https://cdnb.artstation.com/p/assets/images/images/024/077/979/large/dastan-semeigazy-vas.jpg?1581261791" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdna.artstation.com/p/assets/images/images/024/077/982/large/dastan-semeigazy-vasilenko22.jpg?1581261794" data-lightbox="roadtrip"><img src="https://cdna.artstation.com/p/assets/images/images/024/077/982/large/dastan-semeigazy-vasilenko22.jpg?1581261794" ></a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<a href="https://cdnb.artstation.com/p/assets/images/images/024/077/975/large/dastan-semeigazy-healthvopros.jpg?1581261782" data-lightbox="roadtrip"><img src="https://cdnb.artstation.com/p/assets/images/images/024/077/975/large/dastan-semeigazy-healthvopros.jpg?1581261782" ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- contact section start  -->
+
+	<section class="contact" id="contact">
+		<div class="max-width">
+			<h2 class="title">Contact me</h2>
+			<div class="contact-content">
+				<div class="column left">
+					<div class="text">Get in touch</div>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem temporibus quo pariatur magnam possimus porro cupiditate dicta laudantium ab! Voluptas!</p>
+					<div class="icons">
+						<div class="row">
+							<i class="fas fa-user"></i>
+							<div class="info">
+								<div class="head">Name</div>
+								<div class="sub-title">Dastan Semeigazy</div>
+							</div>
+						</div>
+						<div class="row">
+							<i class="fas fa-map-marker-alt"></i>
+							<div class="info">
+								<div class="head">Adress</div>
+								<div class="sub-title">Almaty, Kazakhstan</div>
+							</div>
+						</div>
+						<div class="row">
+							<i class="fas fa-envelope"></i>
+							<div class="info">
+								<div class="head">Email</div>
+								<div class="sub-title">dsemeigazy@gmail.com</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column right">
+					<div class="text">Message me</div>
+					<form action="#">
+						<div class="fields">
+							<div class="field name">
+								<input type="text" placeholder="Name" required>
+							</div>
+							<div class="field email">
+								<input type="email" placeholder="Email" required>
+							</div>
+						</div>
+						<div class="field">
+							<input type="email" placeholder="Subject" required>
+						</div>
+						<div class="field textarea">
+							<textarea name="" id="" cols="30" rows="10" placeholder="Describe project..." required></textarea>
+						</div>
+						<div class="button">
+							<button type="submit">Send message</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="googlemap">
+					<h3>You can find me in these places:</h3>
+					<!--The div element for the map -->
+					<div id="map"></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- footer section  -->
+
+	<footer>
+		<span>Created by <a href="https://instagram.com/dastanqs" target="_blank" style="font-weight: 800; letter-spacing: 1px;">CYBERDUSTIN <i class="fab fa-wolf-pack-battalion"></i> </a> │ <span class="far fa-copyright"></span> 2020. Barlyq quqyqtar qorǵalǵan.</span>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
