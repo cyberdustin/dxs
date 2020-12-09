@@ -10,6 +10,16 @@ $(document).ready(function(){
         }else{
             $('.scroll-up-btn').removeClass('show')
         }
+        if(this.scrollY > 400){
+          $('.me1img').addClass('show');
+        }else{
+          $('.me1img').removeClass('show');
+        }
+        if(this.scrollY > 1200){
+          $('.card').addClass('show');
+        }else{
+          $('.card').removeClass('show');
+        }
     });
 
     // slide up script koi 
@@ -81,6 +91,86 @@ function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 11,
       center: almatyOffice1,
+      styles: [
+        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+        { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+        { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+        {
+          featureType: "administrative.locality",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "poi",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "poi.park",
+          elementType: "geometry",
+          stylers: [{ color: "#263c3f" }],
+        },
+        {
+          featureType: "poi.park",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#6b9a76" }],
+        },
+        {
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [{ color: "#38414e" }],
+        },
+        {
+          featureType: "road",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#212a37" }],
+        },
+        {
+          featureType: "road",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#9ca5b3" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry",
+          stylers: [{ color: "#746855" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#1f2835" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#f3d19c" }],
+        },
+        {
+          featureType: "transit",
+          elementType: "geometry",
+          stylers: [{ color: "#2f3948" }],
+        },
+        {
+          featureType: "transit.station",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "water",
+          elementType: "geometry",
+          stylers: [{ color: "#17263c" }],
+        },
+        {
+          featureType: "water",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#515c6d" }],
+        },
+        {
+          featureType: "water",
+          elementType: "labels.text.stroke",
+          stylers: [{ color: "#17263c" }],
+        },
+      ],
     });
     // The marker, positioned at Almaty
     const marker = new google.maps.Marker({
@@ -211,3 +301,25 @@ function instaLink(){
 function telegramLink(){
   window.open('https://t.me/cyberDas', '_blank');
 }
+
+
+const patternChangeBtn = document.getElementById('pattern-change-btn')
+const redPattern = 'red-pattern'
+
+
+patternChangeBtn.addEventListener('click', ()=>{
+  document.documentElement.style.setProperty('--main-color', '#ec524b');
+  document.documentElement.style.setProperty('--main-third-color', '#af2d2d');
+  document.documentElement.style.setProperty('--bg-image-hue-color', '#222831');
+});
+
+
+
+// $('.pattern-change').click(function(){
+//   $(':root').css('--main-color', '#ec524b');
+// });
+
+
+// $(".removeImg").ready(function(){
+//   $(".removeImg").css({"opacity":"1"}).fadeDuration(1000);
+// }, 1000);
