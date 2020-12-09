@@ -24,6 +24,23 @@
 	--clear-bg-color: #f1f6f9;
 }
 
+:root.red-pattern{
+	/* --main-color: #c75643; main*/
+	--main-color: #ec524b;
+	--main-second-color: #111;
+	--main-third-color: #af2d2d;
+	--main-fourth-color: #fff;
+	--bg-image-hue-color: #222831; 
+	--clear-bg-color: #f1f6f9;
+}
+
+.pattern-change{
+	cursor: pointer;
+	background: var(--main-color);
+	padding: 5px 7px;
+	border-radius: 100px;
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
   }
@@ -268,6 +285,10 @@ html{
 	color: #2a4627;
 }
 
+/* .removeImg{
+	opacity: 0;
+} */
+
 /* all similar content styling  */
 section{
 	padding: 100px 0;
@@ -325,6 +346,17 @@ section .title::after{
 
 .about .about-content .left{
 	width: 45%;
+	opacity: 1;
+}
+
+.about .about-content .left .me1img{
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.about .about-content .left .me1img.show{
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .about .about-content .left img{
@@ -332,6 +364,7 @@ section .title::after{
 	height: 400px;
 	object-fit: cover;
 	border-radius: 50px;
+	/* transform: rotateY(180deg); */
 }
 
 .about .about-content .right{
@@ -393,6 +426,11 @@ section .title::after{
 	cursor: pointer;
 	line-height: 30px;
 	transition: all 0.3s ease;
+	opacity: 0;
+}
+
+.services .serv-content .card.show{
+	opacity: 1;
 }
 
 .services .serv-content .card:hover{
